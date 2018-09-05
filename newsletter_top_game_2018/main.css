@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: "museo-sans-display", sans-serif;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 900;
+    text-align: center;
+    line-height: 0.97;
+}
+
+h2 {
+    font-family: "museo", sans-serif;
+    font-size: 29px;
+    font-weight: 900;
+    line-height: 0.93;
+}
+
+h3 {
+    font-family: "museo", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    font-family: "museo", sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+h4 {
+    font-family: "museo-sans-display", sans-serif;
+    font-size: 47px;
+    font-style: normal;
+    font-weight: 900;
+}
+
+header {
+    width: 800px;
+    height: 436px;
+    background-color: transparent;
+    background-image: linear-gradient(to right, rgba(125, 82, 255, 0.80), rgba(181, 90, 255, 0.80)), url(img/img-header.jpg);
+}
+
+header #header_h1 {
+    color: white;
+    padding-top: 69px;
+}
+
+header #header_btn {
+    color: white;
+    background-color: #7d52ff;
+    padding: 13px 20px;
+    border-radius: 5px;
+    float: left;
+    margin-left: 283px;
+    margin-top: 56px;
+}
+
+section#introducao {
+    width: 800px;
+}
+
+section img#introducao_logo {
+    width: 233px;
+    height: 176.48px;
+    padding-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h1 {
+    padding-top: 45px;
+    color: #7d52ff;
+}
+
+section#introducao p {
+    font-family: "museo", sans-serif;
+    font-size: 18px;
+    color: #7d52ff;
+    text-align: center;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top: 30px;
+}
+
+section img#introducao_seta {
+    width: 11px;
+    height: 13.35px;
+    padding-top: 24px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#duasColunas {
+    margin-top: 24px;
+    width: 800px;
+}
+
+#duasColunas img {
+    width: 311.7px;
+    height: 173.1px;
+}
+
+section div#primeiraColuna,
+section div#segundaColuna {
+    width: 311.67px;
+    height: 318.64px;
+    background-color: white;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.3);
+    
+}
+
+section div#primeiraColuna h2,
+section div#segundaColuna h2 {
+    margin-top: 26px;
+    color: #b45aff;
+    text-align: center;
+}
+
+section div#primeiraColuna a,
+section div#segundaColuna a {
+    color: #4df497;
+    float: right;
+    margin-right: 23.5px;
+    margin-top: 26px;
+}
+
+section div#primeiraColuna {
+    float: left;
+    margin-left: 80px;
+}
+
+section div#segundaColuna {
+    float: right;
+    margin-right: 80px;
+}
+
+section#albumSite {
+    width: 800px;
+    height: 342px;
+    background-color: #b45aff;
+    margin-top: 98px;
+}
+
+section#albumSite h3 {
+    color: white;
+    display: inline-block;
+    margin-top: 35px;
+    margin-left: 200px;
+}
+
+section#albumSite img#albumSiteArrow {
+    width: 6px;
+    height: 9px;
+    margin-left: 8px;
+    margin-bottom: 2px;
+}
+
+section#albumSite img#symbolSite {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    margin-left: 200px;
+}
+
+section#albumSite a {
+    margin-top: 10px;
+    display: inline-block;
+    color: #4df497;
+    font-size: 12px;
+    position: relative;
+    bottom: 4px;
+}
+
+section#albumNew {
+    width: 800px;
+    margin: 0;
+    padding: 0;
+}
+
+section#albumNew img.albumNew1,
+section#albumNew img.albumNew2,
+section#albumNew img.albumNew3 {
+    width: 266.67px;
+    height: 188px;
+}
+
+section#albumNew img.albumNew1 {
+    float: left;
+}
+
+section#albumNew img.albumNew3 {
+    float: right;
+}
+
+section#ingresso {
+    width: 800px;
+    height: 300px;
+    margin-top: -4px;
+    background-color: #7BFF6A;
+    border-top: 10px solid #4DF497;
+}
+
+section#ingresso h3 {
+    color: #7d52ff;
+    margin-left: 174px;
+    margin-top: 44px;
+}
+
+section#ingresso h4 {
+    color: #7d52ff;
+    display: inline-block;
+    margin-left: 33px;
+    margin-top: 6px;
+}
+
+section#ingresso p.acompanhaPreco {
+    font-family: "museo", sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1;
+}
+
+section#ingresso img {
+    float: left;
+    margin-left: 174px;
+    margin-top: 18px;
+}
+
+section#ingresso a#btnGarantir {
+    background-color: #b45aff;
+    padding: 9px 23px;
+    border-radius: 4px;
+    color: #ffffff;
+    position: relative;
+    top: 50px;
+    right: 204px;
+}
+
+footer#rodape {
+    width: 800px;
+    height: 191px;
+    background-color: #b45aff;
+}
+
+footer#rodape section#rodapeTextos p {
+    font-family: "museo", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    float: left;
+    line-height: 2.08;
+    margin-top: 27px;    
+}
+
+footer#rodape section#rodapeTextos p#primeiraColuna {
+    margin-left: 80px;
+}
+
+footer#rodape section#rodapeTextos p#segundaColuna {
+    margin-left: 14px;
+    text-transform: uppercase;
+}
+
+footer#rodape section#rodapeTextos p#terceiraColuna {
+    margin-left: 38px;
+    text-transform: uppercase;
+}
+
+footer#rodape img#rodapeLogo {
+    
+    width: 93px;
+    height: 58.9px;
+    
+}
+
+footer#rodape section#rodapeImagens {
+    margin-top: 27px;
+    margin-left: 54px;
+    display: inline-block;
+    text-align: center;
+}
+
+footer#rodape img#rodapeInstagram {
+    width: 14px;
+    height: 14px;
+}
+
+footer#rodape img#rodapeTwitter {
+    width: 14px;
+    height: 11.36px;
+}
+
+footer#rodape img#rodapeFacebook {
+    width: 7.31px;
+    height: 14px;
+}

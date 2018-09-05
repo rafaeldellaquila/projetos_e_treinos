@@ -1,0 +1,243 @@
+/* Reseta alguns padrões do navegador */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Reseta alguns padrões de link */
+a {
+    text-decoration: none;
+}
+
+/* Definindo largura do documento */
+body {
+    width: 800px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* primeira linha com logo e imagem */
+.first-row {
+    background-color: #f5f3f3;
+}
+
+/* padroes tipograficos */
+h1 {
+    font-weight: bold;
+    font-size: 76px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 47px;
+    text-align: center;
+    text-transform: lowercase;
+    color: #414e63;
+    padding-top: 30px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.11;
+}
+
+/* primeira linha images */
+.first-row .logo {
+    box-sizing: content-box;
+    display: block;
+    padding: 42px 0px 0px 81px;
+    margin-bottom: 20px;
+}
+
+.first-row .img-header {
+    margin-left: 200px;
+    margin-bottom: 5px;
+}
+
+/*segunda linha primeiro conteudo */
+.second-row {
+    margin-top: 30px;
+    box-sizing: content-box;
+    position: relative;
+    border: none;
+    background: #34dcad;
+    padding-bottom: 60px;
+}
+
+.second-row::before {
+    box-sizing: content-box;
+    position: absolute;
+    content: "";
+    top: -40px;
+    border: 400px solid rgba(0, 0, 0, 0);
+    border-top: 0 solid;
+    border-bottom: 40px solid #34dcad;
+    background-color: #f5f3f3;
+}
+
+.second-row h1 {
+    color: #414e63;
+}
+
+.second-row p {
+    color: #f5f3f3;
+    padding: 14px 163px 0px 163px;
+}
+
+.second-row .btn-talk {
+    text-align: center;
+    line-height: 3;
+    width: 312px;
+    height: 51px;
+    color: white;
+    font-weight: bold;
+    border-radius: 26px;
+    background-color: #414e63;
+    display: block;
+    margin-top: 50px;
+    margin-left: 244px;
+}
+
+/*terceira linha SERVIÇOS */
+.third-row {
+    height: 342px;
+    background-color: #F5F3F3;
+}
+
+.third-row ol {
+    padding: 40px 0px 40px 85px;
+}
+
+.table-services {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.title {
+    font-weight: bold;
+    text-align: center;
+    color: #414e63;
+    margin: 5px;
+    /* border: 1px solid red; */
+}
+
+/*quarta linha CLIENTES */
+.fourth-row {
+    height: 345px;
+}
+
+/*quarta linha PRIMEIRA LABEL */
+.project-preview {
+    width: 640px;
+    height: 88px;
+    border: 1px solid #414e63;
+    border-radius: 44px;
+    margin: 15px 0px 0px 80px;
+    display: flex;
+}
+
+.project-preview .project-preview-title {
+    font-weight: bold;
+    color: #34DCAD;
+    font-size: 47px;
+}
+
+.project-preview .title-100 {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 31px;
+    padding-right: 24px;
+}
+
+.project-preview .title-mais {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 35px;
+}
+
+.project-preview .project-preview-img {
+    display: inline-block;
+}
+
+.project-preview .project-preview-img img {
+    width: 37px;
+    height: 37px;
+}
+
+.project-preview .project-preview-img .title-project {
+    text-align: left;
+}
+
+/*quarta linha PRIMEIRA LABEL */
+.client-preview {
+    width: 640px;
+    height: 88px;
+    border: 1px solid #414e63;
+    border-radius: 44px;
+    margin: 15px 0px 0px 80px;
+    display: flex;
+}
+
+.client-preview .client-preview-title {
+    font-weight: bold;
+    color: #34DCAD;
+    font-size: 47px;
+}
+
+.client-preview .title-100 {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 31px;
+    padding-right: 51px;
+}
+
+.client-preview .title-mais {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 35px;
+}
+
+.client-preview .client-preview-img {
+    display: inline-block;
+}
+
+.client-preview .client-preview-img img {
+    width: 37px;
+    height: 37px;
+}
+
+.client-preview .client-preview-img .title-client {
+    text-align: left;
+}
+
+.btn .btn-see-more {
+    width: 246px;
+    height: 51px;
+    border-radius: 26px;
+    font-weight: bold;
+    background-color: #414e63;
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+    display: block;
+    position: relative;
+    left: 272px;
+    bottom: -26px;
+}
+
+footer {
+    height: 124px;
+    background-color: #34dcad;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    padding: 48px 145px 26px 146px;
+}
