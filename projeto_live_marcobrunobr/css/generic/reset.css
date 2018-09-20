@@ -4,6 +4,10 @@
     border: none;
 }
 
+html, body {
+    height: 100%;
+}
+
 input {
     font-size: inherit;
     font-family: inherit;
