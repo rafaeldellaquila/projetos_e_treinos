@@ -1,0 +1,50 @@
+.container {
+  width: 400px;
+  margin: 3em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.photo-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.photo-card > .image {
+  border-radius: 2px 2px 0 0;
+}
+.photo-card > .heading,
+.photo-card > .description,
+.photo-card > .actions {
+  padding: 0 20px;
+}
+.photo-card > .heading .title {
+  color: #333;
+  margin: 10px 0 5px;
+}
+.photo-card > .heading .subtitle {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+.photo-card > .description {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.photo-card > .actions {
+  border-top: 1px solid #ccc;
+}
+.photo-card > .actions > .button {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  padding: 15px 0;
+  transition: color 0.4s;
+}
+.photo-card > .actions > .button:hover {
+  color: #333;
+}
+
+/*# sourceMappingURL=main.css.map */
