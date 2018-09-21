@@ -5,6 +5,7 @@
 .form-collab .label {
     display: block;
     position: relative;
+    margin-bottom: var(--spacing-big);
 }
 .form-collab .label:not(last-of-type) {
     margin-bottom: var(--spacing-medium);
@@ -19,12 +20,14 @@
     bottom: 1px;
     left: 0;
     background-color: var(--color-first);
+    /*animacao*/
     transform: scaleX(0);
-    transform-origin: left center;
-
+    transform-origin: center;
     transition: transform 200ms linear;
 }
-.form-collab .label:focus-within:after {
+/*animacao*/
+/*.form-collab .label:focus-within:after,*/
+.form-collab .label.-focus::after {
     transform: scaleX(1);
 }
 
@@ -60,4 +63,51 @@
 .form-collab .input:focus,
 .form-collab .input:hover {
     border-bottom-color: var(--color-first);
+}
+
+.form-collab .tagInput {
+    display: none;
+}
+
+.form-collab .tag {
+    display: inline-block;
+    font-size: 18px;
+    background-color: var(--color-second-light);
+    padding: 6px;
+    cursor: pointer;
+    animation: vibrationNotChecked 200ms linear;
+}
+
+.form-collab .tag::selection{
+background-color: transparent;
+}
+
+.form-collab .tagInput:checked + .tag {
+    background-color: var(--color-first);
+    color: var(--color-zero);
+    animation: vibrationChecked 200ms linear;
+}
+
+@keyframes vibrationChecked {
+    33% {
+        transform: rotate(10deg);
+    }
+    66% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes vibrationNotChecked {
+    33% {
+        transform: rotate(-10deg);
+    }
+    66% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
 }
