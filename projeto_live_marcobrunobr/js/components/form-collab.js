@@ -39,7 +39,9 @@ passo a passo:
 
 3 -  Dentro do evento preciso descobrir quando o usuario apertar a tecla enter (ok)
 
-4 - Quando apertar o enter vamos pegar o texto
+4 - Quando apertar o enter vamos pegar o texto (ok)
+
+5 - criar o component tag com o texto dentro e usar o id e o for
 
 */
 /* $ usado para identificar  uma referencia no DOM */
@@ -63,6 +65,8 @@ $input.addEventListener('keyup', function (event) {
     */
    const { keyCode } = event
    const keys = { 13: "Enter" }
+   const template = `<input class="tagInput" id="${value}"type="checkbox">
+   <label class="tag" for="${value}">${value}</label>`
 
     if (keys[keyCode] === "Enter") {
       console.log(this.value); 
