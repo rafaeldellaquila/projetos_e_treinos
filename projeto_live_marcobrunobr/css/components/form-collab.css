@@ -27,8 +27,6 @@
     transition: transform 200ms linear;
 }
 
-/*animacao*/
-/*.form-collab .label:focus-within:after,*/
 .form-collab .label.-focus::after {
     transform: scaleX(1);
 }
@@ -70,17 +68,19 @@
 
 .form-collab .wrapTag {
     position: relative;
-    margin-right: 10px; /* ACHO QUE ISSO RESOLVE A GAMBIARRA*/
+    margin-right: 10px;
+    /* ACHO QUE ISSO RESOLVE A GAMBIARRA*/
     transition: opacity 200ms linear;
 }
 
-.form-collab .wrapTag.-remove{
+.form-collab .wrapTag.-remove {
     opacity: 0;
 
 }
+
 .form-collab .tagInput {
     display: none;
-    
+
 }
 
 .form-collab .tag {
