@@ -45,11 +45,18 @@ passo a passo:
 
 */
 /* $ usado para identificar  uma referencia no DOM */
+    /* 
+    const keyCode = event.keyCode
+    const keys = [13]
+    keys[13] = "Enter" 
+    */
 'use strict'
 
-const $formCollab = window.document.querySelector('.form-collab')
-const $label = $formCollab.querySelector('.label')
-const $input = $formCollab.querySelector('.input')
+const $formCollab = window.document.querySelector('.form-collab') // Const que seleciona pra mim o .form-collab
+const $label = $formCollab.querySelector('.label') // Seleciona o label dentro do form
+const $input = $formCollab.querySelector('.input')// seleciona o input dentro do form
+const $tags = $formCollab.querySelector('.tags') //seleciona a classe tags
+
 const focusAndBlur = () => $label.classList.toggle('-focus') // Arow function (Sempre anonimas) // toggle vai literalmente alternar  a classe -focus,
 
 $input.addEventListener('focus', focusAndBlur) // Add evento ao input quando ele for focado(Clicado)
@@ -57,18 +64,20 @@ $input.addEventListener('blur', focusAndBlur) // Add evento ao input quando ele 
 
 $formCollab.addEventListener('submit', event => event.preventDefault()) // Previne o Refresh no form quando pressiona enter
 
-$input.addEventListener('keyup', function (event) {
-    /* 
-    const keyCode = event.keyCode
-    const keys = [13]
-    keys[13] = "Enter" 
-    */
-   const { keyCode } = event
-   const keys = { 13: "Enter" }
-   const template = `<input class="tagInput" id="${value}"type="checkbox">
-   <label class="tag" for="${value}">${value}</label>`
+$input.addEventListener('keyup', event => {  
 
-    if (keys[keyCode] === "Enter") {
-      console.log(this.value); 
+   const {keyCode} = event
+   const keys = { 13: "Enter" }
+
+    if (keys[keyCode] === "Enter") { //quando uma tecla for pressionada, se foro enter entra nop bloco true
+      
+      const $wrap = document.createElement('span')
+      const {value} = $input //Guarda o .value do que foi digitado dentro do input após o keyup para ser substituido no template
+      const template = `<input class="tagInput" id="${value}" type="checkbox" checked><label class="tag" for="${value}">${value}</label>`
+      //Template string com os lugares onde eu qero que mude o value indicado por '${x}' 
+      
+      $wrap.innerHTML = template
+      $tags.prepend($wrap)
+      $input.value = ''
     }
 })
