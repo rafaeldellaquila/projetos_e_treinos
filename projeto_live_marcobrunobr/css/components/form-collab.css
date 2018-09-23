@@ -7,6 +7,7 @@
     position: relative;
     margin-bottom: var(--spacing-big);
 }
+
 .form-collab .label:not(last-of-type) {
     margin-bottom: var(--spacing-medium);
 }
@@ -16,7 +17,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    position: absolute; 
+    position: absolute;
     bottom: 1px;
     left: 0;
     background-color: var(--color-first);
@@ -25,6 +26,7 @@
     transform-origin: center;
     transition: transform 200ms linear;
 }
+
 /*animacao*/
 /*.form-collab .label:focus-within:after,*/
 .form-collab .label.-focus::after {
@@ -32,7 +34,7 @@
 }
 
 .form-collab .title {
-    font-size:  30px;
+    font-size: 30px;
     display: block;
     text-align: center;
     margin-bottom: var(--spacing-small);
@@ -55,6 +57,7 @@
     height: 2em;
     font-weight: bold;
 }
+
 .form-collab .input::selection {
     background-color: var(--color-first);
     color: var(--color-zero);
@@ -65,37 +68,76 @@
     border-bottom-color: var(--color-first);
 }
 
+.form-collab .wrapTag {
+    position: relative;
+    margin-right: 10px; /* ACHO QUE ISSO RESOLVE A GAMBIARRA*/
+    transition: opacity 200ms linear;
+}
+
+.form-collab .wrapTag.-remove{
+    opacity: 0;
+
+}
 .form-collab .tagInput {
     display: none;
+    
 }
 
 .form-collab .tag {
     display: inline-block;
-    font-size: 18px;
+    font-size: 15px;
     background-color: var(--color-second-light);
-    padding: 6px;
+    padding: 9px;
     /*margin-left: 6px; Gambiarra ver o que ta acontecendo*/
     cursor: pointer;
     animation: vibrationNotChecked 200ms linear;
 }
 
-.form-collab .tag::selection{
-background-color: transparent;
+.form-collab .tag::selection {
+    background-color: transparent;
 }
 
-.form-collab .tagInput:checked + .tag {
+.form-collab .tagInput:checked+.tag {
     background-color: var(--color-first);
     color: var(--color-zero);
     animation: vibrationChecked 200ms linear;
+}
+
+.form-collab .remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 18px;
+    width: 18px;
+    line-height: 19px;
+    text-align: center;
+    background-color: var(--color-second);
+    color: var(--color-zero);
+    transform: translateY(-90%);
+    font-size: 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 100ms linear;
+}
+
+.form-collab .remove:hover,
+.form-collab .remove:focus {
+    transform: translateY(-90%) scale(1.2);
+}
+
+.form-collab .remove::selection {
+    background-color: transparent;
 }
 
 @keyframes vibrationChecked {
     33% {
         transform: rotate(10deg);
     }
+
     66% {
         transform: rotate(-10deg);
     }
+
     100% {
         transform: rotate(0);
     }
@@ -105,9 +147,11 @@ background-color: transparent;
     33% {
         transform: rotate(-10deg);
     }
+
     66% {
         transform: rotate(10deg);
     }
+
     100% {
         transform: rotate(0);
     }
