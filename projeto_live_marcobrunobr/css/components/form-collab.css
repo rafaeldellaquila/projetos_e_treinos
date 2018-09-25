@@ -69,7 +69,6 @@
 .form-collab .wrapTag {
     position: relative;
     margin-right: 10px;
-    /* ACHO QUE ISSO RESOLVE A GAMBIARRA*/
     transition: opacity 200ms linear;
 }
 
@@ -88,7 +87,6 @@
     font-size: 15px;
     background-color: var(--color-second-light);
     padding: 9px;
-    /*margin-left: 6px; Gambiarra ver o que ta acontecendo*/
     cursor: pointer;
     animation: vibrationNotChecked 200ms linear;
 }
@@ -128,6 +126,8 @@
 .form-collab .remove::selection {
     background-color: transparent;
 }
+
+
 
 @keyframes vibrationChecked {
     33% {

@@ -13,7 +13,7 @@ const newTag = value => {
         <input class="tagInput" id="${value}" type="checkbox">
         <label class="tag" for="${value}">${value}</label>
         <span class="remove">X</span>
-    </span>`
+        </span>`
     //Template string com os lugares onde eu qero que mude o value indicado por '${x}' 
     $tag.innerHTML = template
 
@@ -26,7 +26,7 @@ $input.addEventListener('blur', focusAndBlur) // Add evento ao input quando ele 
 $formCollab.addEventListener('submit', event => event.preventDefault()) // Previne o Refresh no form quando pressiona enter
 
 $input.addEventListener('keyup', event => {
-
+//Evento 13 = Tecla Enter
     if (event.keyCode === 13) { //quando uma tecla for pressionada, se foro enter entra nop bloco true
         const {
             value
